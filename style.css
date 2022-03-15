@@ -92,6 +92,23 @@ h1 .logo {
   border: 2px solid #9d102b;
 }
 
+.nav-sticky {
+  display: flex;
+  width: 100%;
+  position: fixed;
+  background-color: black;
+  height: 5rem;
+  z-index: 100;
+}
+
+.sticky-links {
+  display: flex;
+  margin: 0 15%;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /* END OF ELEMENTS */
 
 .overflow {
@@ -145,17 +162,6 @@ h1 .logo {
 #home nav.fixed ul {
   max-width: 700px;
   margin: 0 auto;
-}
-
-#about::before {
-  height: 0px;
-  width: 0px;
-  border-left: 30px solid transparent;
-  border-right: 30px solid transparent;
-  border-top: 30px solid #131c23;
-  margin: 0 auto;
-  content: "";
-  display: block;
 }
 
 .social-links {

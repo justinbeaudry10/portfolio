@@ -2,35 +2,34 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - Portfolio Website</title>
+  <title>Justin Beaudry's Portfolio</title>
   <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
-
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<head>
-  <meta charset="UTF-8">
-  <title>Justin Beaudry</title>
   <link href='https://fonts.googleapis.com/css?family=Fauna+One' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="styles/main.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" <!--[if IE]>
   <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 
 </head>
 <body>
-	
+	<nav class="nav-sticky hidden" role="navigation">
+		<ul class="nav_links sticky-links vertical-list">
+			<li><a class="nav_link" href="#home">Home</a></li>
+			<li><a class="nav_link" href="#about">About me</a></li>
+			<li><a class="nav_link" href="#portfolio">My Projects</a></li>
+			<li><a class="nav_link" href="#contact" >Contact Me</a></li>
+		</ul>
+	</nav>
 		<!-- LANDING PAGE -->
 		<section id="home">
 			<!-- OVERLAY -->
 			<div class="overlay">
 				<!-- PRIMARY NAVIGATION -->
-				<nav role="navigation">
-					<ul class="vertical-list">
-						<li><a href="#home">Home</a></li>
-						<li><a href="#about">About me</a></li>
-						<li><a href="#portfolio">Portfolio</a></li>
-						<li><a href="#contact" >Contact Me</a></li>
+				<nav class="nav" role="navigation">
+					<ul class="nav_links vertical-list">
+						<li><a class="nav_link" href="#home">Home</a></li>
+						<li><a class="nav_link" href="#about">About me</a></li>
+						<li><a class="nav_link" href="#portfolio">My Projects</a></li>
+						<li><a class="nav_link" href="#contact" >Contact Me</a></li>
 					</ul>
 				</nav>
 				<!-- END OF PRIMARY NAVIGATION -->
@@ -55,12 +54,12 @@
 				<div class="row info">
 					<div class="col-sm-8">
 						<p>
-							I'm currently studying Software Engineering at Western University having just completed my 2nd year. I obsess over the minor details in CSS/HTML and am passionate in getting computers to more effectively work on your side by freeing you of the burdens of carrying out repetitive tasks through automative processes.
+							I'm a 3rd year Software Engineering student at Western University, appearing on the Dean's List each of my first 2 years. I have a love of technology and sports, and my ultimate goal is to combine these passions into a successful career.
 						<span class="signature">Justin Beaudry</span>
 					</div>
 
 					<div class="col-md-4">
-						<img src="https://res.cloudinary.com/dj7k0lade/image/upload/v1526688702/codepen/portfolio/profile.jpg" alt="Lewis Alberto Briffa" class="img-responsive img-circle">
+						<img src="img/headshot.jpg" alt="Headshot" class="img-responsive img-circle">
 					</div>
 				</div>
 				
@@ -76,13 +75,13 @@
 						</li>
 						<li>
 							<ul class="vertical-list skills" id="automation-skills">
-								<li>AutoHotKey</li>
+								<li>React</li>
 							</ul>
 						</li>
 
 						<li>
 							<ul class="vertical-list skills" id="misc-skills">
-								<li>Regular Expressions</li>
+								<li>Java</li>
 							</ul>
 						</li>
 					</ul>
@@ -97,7 +96,7 @@
 			
 					<!-- CONTAINER -->
 					<div class="container">
-						<h2>some of my work...</h2>
+						<h2>My Projects</h2>
 					</div>
 					<!-- END OF CONTAINER -->
 					
@@ -326,7 +325,7 @@
 		<section id="contact">
 			<div class="overlay">
 				<div class="container">
-					<h2>get in touch...</h2>
+					<h2>Contact Me!</h2>
 					
 					<div class="row">
 						<div class="col-lg-9">
