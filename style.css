@@ -96,7 +96,7 @@ h1 .logo {
   display: flex;
   width: 100%;
   position: fixed;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.9);
   height: 5rem;
   z-index: 100;
 }

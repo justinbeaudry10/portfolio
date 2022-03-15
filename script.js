@@ -9,6 +9,8 @@ $(function () {
     }
   });
 
+  const navHeight = $(".nav-sticky")[0].getBoundingClientRect().height;
+
   const stickyNav = function (entries) {
     const [entry] = entries;
 
@@ -22,7 +24,7 @@ $(function () {
   const homeObserver = new IntersectionObserver(stickyNav, {
     root: null,
     threshold: 0,
-    rootMargin: `0px`,
+    rootMargin: `-${navHeight}px`,
   });
 
   homeObserver.observe($("#home")[0]);
