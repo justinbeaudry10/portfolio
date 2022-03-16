@@ -215,7 +215,7 @@ h1 .logo {
 }
 
 #about h2::after {
-  border-bottom: 2px dashed #918d8d;
+  border-bottom: 2px solid #918d8d;
 }
 
 #about .info p {
@@ -270,7 +270,7 @@ h1 .logo {
 }
 
 #portfolio h2:after {
-  border-bottom: 2px dashed #b4b4b4;
+  border-bottom: 2px solid #b4b4b4;
 }
 
 #portfolio .row {
@@ -411,8 +411,6 @@ h1 .logo {
 }
 
 #contact {
-  background: url("https://res.cloudinary.com/dj7k0lade/image/upload/v1526689027/codepen/portfolio/map.jpg")
-    no-repeat;
   background-size: cover;
 }
 
@@ -425,7 +423,7 @@ h1 .logo {
 }
 
 #contact h2:after {
-  border-bottom: 2px dashed white;
+  border-bottom: 2px solid white;
 }
 
 #contact form {

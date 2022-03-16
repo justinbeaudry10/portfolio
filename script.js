@@ -1,4 +1,10 @@
+$(window).on("beforeunload", function () {
+  $(window).scrollTop(0);
+});
+
 $(function () {
+  // Force scroll to top on page reload
+
   // Smooth scrolling
   $(".nav_links").on("click", (e) => {
     e.preventDefault();
