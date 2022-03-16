@@ -664,3 +664,14 @@ h1 .logo {
     height: 70%;
   }
 }
+
+.nav_link {
+  transition: all 0.5s;
+}
+
+nav:hover .nav_link {
+  opacity: 0.5;
+}
+nav .nav_link:hover {
+  opacity: 1;
+}
