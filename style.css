@@ -665,10 +665,6 @@ h1 .logo {
   }
 }
 
-.nav_link {
-  transition: all 0.5s;
-}
-
 #icons {
   display: flex;
   margin: 0 10%;
@@ -676,9 +672,22 @@ h1 .logo {
   align-items: center;
 }
 
+.nav_link {
+  transition: all 0.5s;
+}
+
 nav:hover .nav_link {
   opacity: 0.5;
 }
 nav .nav_link:hover {
   opacity: 1;
+}
+
+section {
+  transition: all 1s;
+}
+
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
 }

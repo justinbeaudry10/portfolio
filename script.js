@@ -29,6 +29,29 @@ $(function () {
   homeObserver.observe($("#home")[0]);
 
   ///////////////////////////////////////////////////////
+  // Reveal sections
+  const hiddenSections = document.querySelectorAll(".section--hidden");
+
+  const revealSection = function (entries, observer) {
+    const [entry] = entries;
+
+    if (!entry.isIntersecting) return;
+
+    entry.target.classList.remove("section--hidden");
+    observer.unobserve(entry.target);
+  };
+
+  const sectionObserver = new IntersectionObserver(revealSection, {
+    root: null,
+    threshold: 0.15,
+  });
+
+  hiddenSections.forEach((section) => {
+    console.log(section);
+    sectionObserver.observe(section);
+  });
+
+  ///////////////////////////////////////////////////////
   // Nav fade animation
   // const handleHover = function (e) {
   //   if ($(e.target).hasClass("nav_link")) {
