@@ -669,6 +669,13 @@ h1 .logo {
   transition: all 0.5s;
 }
 
+#icons {
+  display: flex;
+  margin: 0 10%;
+  justify-content: space-between;
+  align-items: center;
+}
+
 nav:hover .nav_link {
   opacity: 0.5;
 }
