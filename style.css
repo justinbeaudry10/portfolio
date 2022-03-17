@@ -689,3 +689,7 @@ section {
   opacity: 0;
   transform: translateY(8rem);
 }
+
+#school-logo {
+  margin-top: 2rem;
+}
