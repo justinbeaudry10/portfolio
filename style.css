@@ -39,12 +39,6 @@ h2 {
   margin-top: 140px;
 }
 
-h2:after {
-  display: block;
-  margin: 42px 0;
-  content: "";
-}
-
 h3 {
   font-weight: bold;
 }
@@ -179,13 +173,18 @@ h1 .logo {
   margin-right: 10px;
 }
 
+#about {
+  background-color: #114190;
+  color: white;
+}
+
 #about .info {
   display: flex;
   flex-direction: row;
 }
 
 #about h2 {
-  color: #0d2435;
+  font-weight: bold;
 }
 
 #about h2::after {
@@ -200,7 +199,6 @@ h1 .logo {
   font-family: "Brush Script MT", cursive;
   font-size: 150%;
   float: right;
-  color: #0d2435;
   opacity: 0.9;
 }
 
@@ -216,13 +214,13 @@ h1 .logo {
 #web-development-skills li {
   margin: 1rem;
   border-radius: 2.5rem;
-  background-color: #114190;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 #other-skills li {
   margin: 1rem;
   border-radius: 2.5rem;
-  background-color: #770fbd;
+  background-color: rgba(204, 6, 253, 0.6);
 }
 
 .skills {
