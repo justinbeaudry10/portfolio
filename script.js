@@ -3,7 +3,19 @@ $(window).on("beforeunload", function () {
 });
 
 $(function () {
-  // Force scroll to top on page reload
+  // Side scrolling skills
+  $("#skills").mousemove(function (e) {
+    let containerWidth = $("#skills").innerWidth();
+    let containerStart = $("#skills").offset().left;
+    let scroller = $("#scroller");
+    let scrollerWidth = scroller.outerWidth();
+
+    scroller.css({
+      left:
+        (containerWidth - scrollerWidth) *
+        ((e.pageX - containerStart) / containerWidth),
+    });
+  });
 
   // Smooth scrolling
   $(".nav_links").on("click", (e) => {
@@ -53,27 +65,6 @@ $(function () {
   });
 
   hiddenSections.forEach((section) => {
-    console.log(section);
     sectionObserver.observe(section);
   });
-
-  ///////////////////////////////////////////////////////
-  // Nav fade animation
-  // const handleHover = function (e) {
-  //   if ($(e.target).hasClass("nav_link")) {
-  //     const siblings = e.target.closest("nav").querySelectorAll(".nav_link");
-
-  //     siblings.forEach((el) => {
-  //       if (el !== e.target) el.style.opacity = this;
-  //     });
-  //     // $(e.target)
-  //     //   .closest(".nav_link")
-  //     //   .each(function () {
-  //     //     console.log(e.target, this);
-  //     //   });
-  //   }
-  // };
-
-  // $(".nav").on("mouseover", handleHover.bind(0.5));
-  // $(".nav").on("mouseout", handleHover.bind(1));
 });
